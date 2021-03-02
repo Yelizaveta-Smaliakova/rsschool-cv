@@ -1,5 +1,6 @@
 # Yelizaveta Smaliakova
 **Mobile:** +375 44 711 62 49
+
 **E-mail:** smolyakova580@gmail.com
 
 ---
@@ -35,9 +36,11 @@ Internship in QA department in TulaCo company
 ---
 ### Education
 **May 30, 2015** - Has successfully graduated from musical school
+
 **June 8, 2019** - Has graduated from Belarusian State University Lyceum
 
 ---
 ### English
 **English level:** B2
+
 **English experience:** For three years I have been studying English in different schools: Streamline and International house
