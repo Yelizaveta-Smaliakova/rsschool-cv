@@ -29,6 +29,7 @@ Have been learning C++ for 4 years. Last year started programming in Wolfram Mat
         }
     return 0;
     }
+    
 ---
 ### Experience
 Internship in QA department in TulaCo company
