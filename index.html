@@ -12,7 +12,10 @@
     <div class="wrapper">
         <header class="header">
             <nav class="header__nav">
-                <ul class="header__nav_list">
+                <button onclick="burger_click()" class="header__nav_dropdown">
+                    <img src="assets/burger.svg" class="header__nav_dropdown-button">
+                </button>
+                <ul class="header__nav_list" id="menu_dropdown">
                     <li>
                         <a href="#about_me">About me</a>
                     </li>
@@ -38,285 +41,304 @@
             </nav>
         </header>
         <main class="main">
-            <div class="main__info">
-                <div class="main__photo">
-                    <img src="assets/photo.png"  alt="photo-yelizaveta-smaliakova" class="main__photo_profile">
+            <div class="main__wrapper">
+                <div class="main__info">
+                    <div class="main__photo">
+                        <img src="assets/photo.png"  alt="photo-yelizaveta-smaliakova" class="main__photo_profile">
+                    </div>
+                    <section class="main__contacts">
+                        <h2 id="contacts">Contacts</h2>
+                        <hr class="hr-gray">
+                        <hr class="hr-blue">
+                        <ul class="main__contacts_list">
+                            <li>
+                                <img src="assets/location-sign.svg" alt="place" class="main__contacts_list-photo">
+                                <p>Minsk, Belarus</p>
+                            </li>
+                            <li>
+                                <img src="assets/phone.svg" alt="phone" class="main__contacts_list-photo">
+                                <a href="tel:+375447116249">+375 44 711 62 49</a>
+                            </li>
+                            <li>
+                                <img src="assets/email.svg" alt="email" class="main__contacts_list-photo">
+                                <a href="mailto:smolyakova580@gmail.com">smolyakova580@gmail.com</a>
+                            </li>
+                            <li>
+                                <img src="assets/telegram-plane.svg" alt="telegram" class="main__contacts_list-photo">
+                                <a href="https://t.me/lisa_smolyakova" target="_blank">lisa_smolyakova</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="main__skills">
+                        <h2 id="skills">Skills</h2>
+                        <hr class="hr-gray">
+                        <hr class="hr-blue">
+                        <div class="main__skills_conterner">
+                            <ul class="main__skills_list">
+                                <li>
+                                    <img src="assets/html.svg" alt="html" class="main__skills_list-photo">
+                                    <p>HTML</p>
+                                </li>
+                                <li>
+                                    <img src="assets/css.svg" alt="css" class="main__skills_list-photo">
+                                    <p>CSS</p>
+                                </li>
+                                <li>
+                                    <img src="assets/bootstrap.svg" alt="bootstrap" class="main__skills_list-photo">
+                                    <p>Bootstrap</p>
+                                </li>
+                                <li>
+                                    <img src="assets/javascript.svg" alt="javascript" class="main__skills_list-photo">
+                                    <p>JavaScript</p>
+                                </li>
+                                <li>
+                                    <img src="assets/figma.svg" alt="figma" class="main__skills_list-photo">
+                                    <p>Figma</p>
+                                </li>
+                                <li>
+                                    <img src="assets/git.svg" alt="git" class="main__skills_list-photo">
+                                    <p>Git</p>
+                                </li>
+                            </ul>
+                            <ul class="main__skills_list">
+                                <li>
+                                    <img src="assets/python.png" alt="python" class="main__skills_list-photo">
+                                    <p>Python</p>
+                                </li>
+                                <li>
+                                    <img src="assets/c++.png" alt="css" class="main__skills_list-photo">
+                                    <p>C++</p>
+                                </li>
+                                <li>
+                                    <img src="assets/wolfram.png" alt="wolfram " class="main__skills_list-photo">
+                                    <p>Wolfram Mathematica</p>
+                                </li>
+                                <li>
+                                    <img src="assets/powerbi.png" alt="powerbi" class="main__skills_list-photo">
+                                    <p>Power BI</p>
+                                </li>
+                                <li>
+                                    <img src="assets/science.png" alt="data_science" class="main__skills_list-photo">
+                                    <p>Data Science</p>
+                                </li>
+                                <li>
+                                    <img src="assets/math.png" alt="math" class="main__skills_list-photo">
+                                    <p>Mathematical Modeling</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </section>
+                    <section class="main__language">
+                        <h2 id="language">Language</h2>
+                        <hr class="hr-gray">
+                        <hr class="hr-blue"> 
+                        <ul class="main__language_list">
+                            <li>
+                                <p>Russian Native</p>
+                            </li>
+                            <li>
+                                <p>Belarusian Native</p>
+                            </li>
+                            <li>
+                                <p>English B2</p>
+                            </li>
+                            <li>
+                                <p>German A1</p>
+                            </li>
+                        </ul>   
+                    </section>
                 </div>
-                <section class="main__contacts">
-                    <h2 id="contacts">Contacts</h2>
-                    <hr class="hr-gray">
-                    <hr class="hr-blue">
-                    <ul class="main__contacts_list">
-                        <li>
-                            <img src="assets/location-sign.svg" alt="place" class="main__contacts_list-photo">
-                            <p>Minsk, Belarus</p>
-                        </li>
-                        <li>
-                            <img src="assets/phone.svg" alt="phone" class="main__contacts_list-photo">
-                            <a href="tel:+375447116249">+375 44 711 62 49</a>
-                        </li>
-                        <li>
-                            <img src="assets/email.svg" alt="email" class="main__contacts_list-photo">
-                            <a href="mailto:smolyakova580@gmail.com">smolyakova580@gmail.com</a>
-                        </li>
-                        <li>
-                            <img src="assets/telegram-plane.svg" alt="telegram" class="main__contacts_list-photo">
-                            <a href="https://t.me/lisa_smolyakova" target="_blank">lisa_smolyakova</a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="main__skills">
-                    <h2 id="skills">Skills</h2>
-                    <hr class="hr-gray">
-                    <hr class="hr-blue">
-                    <div class="main__skills_conterner">
-                        <ul class="main__skills_list">
-                            <li>
-                                <img src="assets/html.svg" alt="html" class="main__skills_list-photo">
-                                <p>HTML</p>
-                            </li>
-                            <li>
-                                <img src="assets/css.svg" alt="css" class="main__skills_list-photo">
-                                <p>CSS</p>
-                            </li>
-                            <li>
-                                <img src="assets/bootstrap.svg" alt="bootstrap" class="main__skills_list-photo">
-                                <p>Bootstrap</p>
-                            </li>
-                            <li>
-                                <img src="assets/javascript.svg" alt="javascript" class="main__skills_list-photo">
-                                <p>JavaScript</p>
-                            </li>
-                            <li>
-                                <img src="assets/figma.svg" alt="figma" class="main__skills_list-photo">
-                                <p>Figma</p>
-                            </li>
-                            <li>
-                                <img src="assets/git.svg" alt="git" class="main__skills_list-photo">
-                                <p>Git</p>
-                            </li>
-                        </ul>
-                        <ul class="main__skills_list">
-                            <li>
-                                <img src="assets/python.png" alt="python" class="main__skills_list-photo">
-                                <p>Python</p>
-                            </li>
-                            <li>
-                                <img src="assets/c++.png" alt="css" class="main__skills_list-photo">
-                                <p>C++</p>
-                            </li>
-                            <li>
-                                <img src="assets/wolfram.png" alt="wolfram " class="main__skills_list-photo">
-                                <p>Wolfram Mathematica</p>
-                            </li>
-                            <li>
-                                <img src="assets/powerbi.png" alt="powerbi" class="main__skills_list-photo">
-                                <p>Power BI</p>
-                            </li>
-                            <li>
-                                <img src="assets/science.png" alt="data_science" class="main__skills_list-photo">
-                                <p>Data Science</p>
-                            </li>
-                            <li>
-                                <img src="assets/math.png" alt="math" class="main__skills_list-photo">
-                                <p>Mathematical Modeling</p>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </section>
-                <section class="main__language">
-                    <h2 id="language">Language</h2>
-                    <hr class="hr-gray">
-                    <hr class="hr-blue"> 
-                    <ul class="main__language_list">
-                        <li>
-                            <p>Russian Native</p>
-                        </li>
-                        <li>
-                            <p>Belarusian Native</p>
-                        </li>
-                        <li>
-                            <p>English B2</p>
-                        </li>
-                        <li>
-                            <p>German A1</p>
-                        </li>
-                    </ul>   
-                </section>
+                <div class="main__general">
+                    <section class="main__general_name">
+                        <h1>Yelizaveta Smaliakova</h1>
+                        <p>Frontend Developer</p>
+                    </section>
+                    <section class="main__about">
+                        <h2 id="about_me">About me</h2>
+                        <hr class="hr-gray">
+                        <hr class="hr-blue"> 
+                        <p>
+                            I am a dedicated, organized and methodical individual. I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I have an active and dynamic approach to work and getting things done. I am determined and decisive. I identify and develop opportunities.
+                        </p>
+                    </section>
+                    <section class="main__education">
+                        <h2 id="education">Education</h2>
+                        <hr class="hr-gray">
+                        <hr class="hr-blue">
+                        <div class="main__education_container">
+                            <article class="main__education_one">
+                                <div class="main__education_date">
+                                    <h3>Belarusian State University</h3>
+                                    <p>09.2019 - 06.2023</p>
+                                </div>
+                                <p>Faculty of Radiophysics and Computer Technologies</p>
+                                <p>Specialty: Computer Security</p>
+                                <ul>
+                                    <li>
+                                        Diploma thesis: Development and software implementation of genetic polymorphism identification algorithms
+                                    </li>
+                                    <li>
+                                        GPA: 9.8 / 10
+                                    </li>
+                                    <li>
+                                        Wargaming Scholarship holder for research activities (2020/II, 2021/I and 2021/II)
+                                    </li>
+                                </ul>
+                            </article>
+                        </div> 
+                    </section>
+                    <section class="main__work">
+                        <h2 id="work">Work Experience</h2>
+                        <hr class="hr-gray">
+                        <hr class="hr-blue"> 
+                        <div class="main__work_container">
+                            <article class="main__work_one">
+                                <div class="main__work_date">
+                                    <h3>Data Analyst</h3>
+                                    <p>12.2022 - Present</p>
+                                </div>
+                                <p>DevXed</p>
+                                <ul>
+                                    <li>
+                                        Research and preparation of reports
+                                    </li>
+                                    <li>
+                                        Monitoring of the system operation
+                                    </li>
+                                    <li>
+                                        Processing of data arrays, preparation of data samples
+                                    </li>
+                                    <li>
+                                        Preparation and description of business tasks
+                                    </li>
+                                </ul>
+                            </article>
+                            <article class="main__work_one">
+                                <div class="main__work_date">
+                                    <h3>Team Leader</h3>
+                                    <p>09.2019 - Present</p>
+                                </div>
+                                <p>Lyceum of Belarusian State University</p>
+                                <ul>
+                                    <li>
+                                        Prepare high school students to Young Physicist Tournaments
+                                    </li>
+                                    <li>
+                                        Organise participation of Belarusian team in international Young Physicist Tournaments
+                                    </li>
+                                </ul>
+                            </article>
+                            <article class="main__work_one">
+                                <div class="main__work_date">
+                                    <h3>Trainee Junior Researcher</h3>
+                                    <p>04.2022 - 10.2022</p>
+                                </div>
+                                <p>Belarusian State University</p>
+                                <ul>
+                                    <li>
+                                        Developed the Single Nucleotide Polymorphisms calling algorithms based on genome sequencing data
+                                    </li>
+                                </ul>
+                            </article>
+                            <article class="main__work_one">
+                                <div class="main__work_date">
+                                    <h3>Physics Teacher</h3>
+                                    <p>09.2021 - 05.2022</p>
+                                </div>
+                                <p>Lyceum of Belarusian State University</p>
+                                <ul>
+                                    <li>
+                                        Prepared 9th grade students for the lyceum entrance examination in physics
+                                    </li>
+                                </ul>
+                            </article>
+                            <article class="main__work_one">
+                                <div class="main__work_date">
+                                    <h3>Manual QA Engineer (Intern)</h3>
+                                    <p>06.2019 - 08.2019</p>
+                                </div>
+                                <p>TulaCo</p>
+                                <ul>
+                                    <li>
+                                        Design and execute test plans for individual pieces of software
+                                    </li>
+                                    <li>
+                                        Identify and report bugs
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </section>
+                </div>
             </div>
-            <div class="main__general">
-                <section class="main__general_name">
-                    <h1>Yelizaveta Smaliakova</h1>
-                    <p>Frontend Developer</p>
-                </section>
-                <section class="main__about">
-                    <h2 id="about_me">About me</h2>
-                    <hr class="hr-gray">
-                    <hr class="hr-blue"> 
-                    <p>
-                        I am a dedicated, organized and methodical individual. I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I have an active and dynamic approach to work and getting things done. I am determined and decisive. I identify and develop opportunities.
-                    </p>
-                </section>
-                <section class="main__education">
-                    <h2 id="education">Education</h2>
-                    <hr class="hr-gray">
-                    <hr class="hr-blue">
-                    <div class="main__education_container">
-                        <article class="main__education_one">
-                            <div class="main__education_date">
-                                <h3>Belarusian State University</h3>
-                                <p>09.2019 - 06.2023</p>
-                            </div>
-                            <p>Faculty of Radiophysics and Computer Technologies</p>
-                            <p>Specialty: Computer Security</p>
-                            <ul>
-                                <li>
-                                    Diploma thesis: Development and software implementation of genetic polymorphism identification algorithms
-                                </li>
-                                <li>
-                                    GPA: 9.8 / 10
-                                </li>
-                                <li>
-                                    Wargaming Scholarship holder for research activities (2020/II, 2021/I and 2021/II)
-                                </li>
-                            </ul>
-                        </article>
-                    </div> 
-                </section>
-                <section class="main__work">
-                    <h2 id="work">Work Experience</h2>
-                    <hr class="hr-gray">
-                    <hr class="hr-blue"> 
-                    <div class="main__work_container">
-                        <article class="main__work_one">
-                            <div class="main__work_date">
-                                <h3>Data Analyst</h3>
-                                <p>12.2022 - Present</p>
-                            </div>
-                            <p>DevXed</p>
-                            <ul>
-                                <li>
-                                    Research and preparation of reports
-                                </li>
-                                <li>
-                                    Monitoring of the system operation
-                                </li>
-                                <li>
-                                    Processing of data arrays, preparation of data samples
-                                </li>
-                                <li>
-                                    Preparation and description of business tasks
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="main__work_one">
-                            <div class="main__work_date">
-                                <h3>Team Leader</h3>
-                                <p>09.2019 - Present</p>
-                            </div>
-                            <p>Lyceum of Belarusian State University</p>
-                            <ul>
-                                <li>
-                                    Prepare high school students to Young Physicist Tournaments
-                                </li>
-                                <li>
-                                    Organise participation of Belarusian team in international Young Physicist Tournaments
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="main__work_one">
-                            <div class="main__work_date">
-                                <h3>Trainee Junior Researcher</h3>
-                                <p>04.2022 - 10.2022</p>
-                            </div>
-                            <p>Belarusian State University</p>
-                            <ul>
-                                <li>
-                                    Developed the Single Nucleotide Polymorphisms calling algorithms based on genome sequencing data
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="main__work_one">
-                            <div class="main__work_date">
-                                <h3>Physics Teacher</h3>
-                                <p>09.2021 - 05.2022</p>
-                            </div>
-                            <p>Lyceum of Belarusian State University</p>
-                            <ul>
-                                <li>
-                                    Prepared 9th grade students for the lyceum entrance examination in physics
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="main__work_one">
-                            <div class="main__work_date">
-                                <h3>Manual QA Engineer (Intern)</h3>
-                                <p>06.2019 - 08.2019</p>
-                            </div>
-                            <p>TulaCo</p>
-                            <ul>
-                                <li>
-                                    Design and execute test plans for individual pieces of software
-                                </li>
-                                <li>
-                                    Identify and report bugs
-                                </li>
-                            </ul>
-                        </article>
-                    </div>
-                </section>
-                <section class="main__projects">
-                    <h2 id="project">Projects</h2>
-                    <hr class="hr-gray">
-                    <hr class="hr-blue">
-                    <article class="main__projects_one">
-                        <h3>Code Example</h3>
-                        <div class="main__projects_code">
+            <section class="main__projects">
+                <h2 id="project">Projects</h2>
+                <hr class="hr-gray">
+                <hr class="hr-blue">
+                <article class="main__projects_one">
+                    <h3>Code Example</h3>
+                    <div class="main__projects_code">
 <pre>
 words_freq <span class="main__projects_code-sign">=</span> []
 <span class="main__projects_code-fun">for</span> n <span class="main__projects_code-fun">in</span> <span class="main__projects_code-word">range</span>(<span class="main__projects_code-num">5</span>,<span class="main__projects_code-num">14</span>):
-    <span class="main__projects_code-fun">for</span> i <span class="main__projects_code-fun">in</span> <span class="main__projects_code-word">range</span>(<span class="main__projects_code-word">len</span>(main_message)<span class="main__projects_code-sign">-</span>n<span class="main__projects_code-sign">+</span><span class="main__projects_code-num">1</span>):
-        word <span class="main__projects_code-sign">=</span> main_message[i:i<span class="main__projects_code-sign">+</span>n]
-        j <span class="main__projects_code-sign">=</span> i
-        pos <span class="main__projects_code-sign">=</span> main_message.find(word)
-        pos_ar <span class="main__projects_code-sign">=</span> []
-        <span class="main__projects_code-fun">if</span> main_message.find(word, j<span class="main__projects_code-sign">+</span>n) <span class="main__projects_code-sign">!=</span> <span class="main__projects_code-sign">-</span><span class="main__projects_code-num">1</span>:
-            <span class="main__projects_code-fun">while</span> main_message.find(word, j<span class="main__projects_code-sign">+</span>n) <span class="main__projects_code-sign">!= </span><span class="main__projects_code-sign">-</span><span class="main__projects_code-num">1</span>:
-                pos_ar.append(main_message.find(word, j<span class="main__projects_code-sign">+</span>n)<span class="main__projects_code-sign">-</span>pos)
-                pos <span class="main__projects_code-sign">=</span> main_message.find(word, j<span class="main__projects_code-sign">+</span>n)
-                j <span class="main__projects_code-sign">=</span> main_message.find(word, j<span class="main__projects_code-sign">+</span>n)
-            words_freq.append([<span class="main__projects_code-word">len</span>(word), word, pos_ar])
+<span class="main__projects_code-fun">for</span> i <span class="main__projects_code-fun">in</span> <span class="main__projects_code-word">range</span>(<span class="main__projects_code-word">len</span>(main_message)<span class="main__projects_code-sign">-</span>n<span class="main__projects_code-sign">+</span><span class="main__projects_code-num">1</span>):
+    word <span class="main__projects_code-sign">=</span> main_message[i:i<span class="main__projects_code-sign">+</span>n]
+    j <span class="main__projects_code-sign">=</span> i
+    pos <span class="main__projects_code-sign">=</span> main_message.find(word)
+    pos_ar <span class="main__projects_code-sign">=</span> []
+    <span class="main__projects_code-fun">if</span> main_message.find(word, j<span class="main__projects_code-sign">+</span>n) <span class="main__projects_code-sign">!=</span> <span class="main__projects_code-sign">-</span><span class="main__projects_code-num">1</span>:
+        <span class="main__projects_code-fun">while</span> main_message.find(word, j<span class="main__projects_code-sign">+</span>n) <span class="main__projects_code-sign">!= </span><span class="main__projects_code-sign">-</span><span class="main__projects_code-num">1</span>:
+            pos_ar.append(main_message.find(word, j<span class="main__projects_code-sign">+</span>n)<span class="main__projects_code-sign">-</span>pos)
+            pos <span class="main__projects_code-sign">=</span> main_message.find(word, j<span class="main__projects_code-sign">+</span>n)
+            j <span class="main__projects_code-sign">=</span> main_message.find(word, j<span class="main__projects_code-sign">+</span>n)
+        words_freq.append([<span class="main__projects_code-word">len</span>(word), word, pos_ar])
 </pre>
-                        </div>
-                    </article>
-                    <article class="main__projects_one">
-                        <h3>Projects</h3>
-                        <div class="main__project_slider">
-                            <div class="main__project_slider-left"></div>
-                            <figure class="main__project_slider-element">
-                                <img src="assets/online_zoo.PNG" alt="online zoo" class="main__project_slider-element-picture">
-                                <figcaption>Online Zoo</figcaption>
-                            </figure>
-                            <figure class="main__project_slider-element">
-                                <img src="assets/virtual_piano.PNG" alt="virtual piano" class="main__project_slider-element-picture">
-                                <figcaption>Virtual Piano</figcaption>
-                            </figure>
-                            <div class="main__project_slider-right"></div>
-                        </div>
-                    </article>
-                </section>
-            </div>
+                    </div>
+                </article>
+                <article class="main__projects_one">
+                    <h3>Projects</h3>
+                    <div class="main__project_slider">
+                        <div class="main__project_slider-button main__project_slider-left"></div>
+                        <figure class="main__project_slider-element">
+                            <a href="https://rolling-scopes-school.github.io/yelizaveta-smaliakova-JSFE2021Q1/online-zoo/pages/landing/landing.html" target="_blank">
+                                <img src="assets/online_zoo.png" alt="online zoo" class="main__project_slider-element-picture">
+                                <figcaption class="main__project_slider-element-cap">Online Zoo</figcaption>
+                            </a>
+                        </figure>
+                        <figure class="main__project_slider-element">
+                            <a href="https://rolling-scopes-school.github.io/yelizaveta-smaliakova-JSFE2021Q1/virtual-piano/" target="_blank">
+                                <img src="assets/virtual_piano.png" alt="virtual piano" class="main__project_slider-element-picture">
+                                <figcaption class="main__project_slider-element-cap">Virtual Piano</figcaption>
+                            </a>
+                        </figure>
+                        <figure class="main__project_slider-element">
+                            <a href="https://rolling-scopes-school.github.io/yelizaveta-smaliakova-JSFE2021Q1/photo-filter/" target="_blank">
+                                <img src="assets/photo_filter.png" alt="photo filter" class="main__project_slider-element-picture">
+                                <figcaption class="main__project_slider-element-cap">Virtual Piano</figcaption>
+                            </a>
+                        </figure>
+                        <figure class="main__project_slider-element">
+                            <a href="https://rolling-scopes-school.github.io/yelizaveta-smaliakova-JSFE2021Q1/wildlife" target="_blank">
+                                <img src="assets/wildlife.png" alt="virtual piano" class="main__project_slider-element-picture">
+                                <figcaption class="main__project_slider-element-cap">Virtual Piano</figcaption>
+                            </a>
+                        </figure>
+                        <div class="main__project_slider-button main__project_slider-right"></div>
+                    </div>
+                </article>
+            </section>
         </main>
         <footer class="footer">
             <a href="https://rs.school/" target="_blank">
                 <img src="assets/rs_school.svg" alt="rs-logo" class="footer__logo">
             </a>
             <p class="footer__age">© Yelizaveta Smaliakova 2023</p>
-            <a href="https://github.com/Yelizaveta-Smaliakova" targe="_blank">
+            <a href="https://github.com/Yelizaveta-Smaliakova" target="_blank">
                 <img src="assets/github.svg" alt="github" class="footer__github">
             </a>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
