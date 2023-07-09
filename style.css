@@ -331,7 +331,7 @@ h3 {
 .main__contacts_list-photo {
     width: 20px;
     margin-right: 10px;
-    
+
 }
 
 .main__skills_list-photo {
@@ -356,19 +356,12 @@ h3 {
     font-weight: 500;
 }
 
-.main__about {
-}
-
 .main__about > p {
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     font-size: 16px;
     line-height: 18px;
     font-weight: 300;
-}
-
-.main__education {
-    
 }
 
 .main__education_date, .main__work_date {
@@ -404,18 +397,6 @@ h3 {
     border-left: 3px solid var(--gray);
 }
 
-/* .main__education_one:after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    background-color: #000080;
-    border: 1px solid;
-    width: 25px;
-    height: 1px;
-    top: 7px;
-    left: 0px;
-} */
-
 .main__education_one > p, .main__work_one > p {
     font-weight: 600;
 }
@@ -429,7 +410,12 @@ h3 {
     list-style-type: disc;
 }
 
-.main__work {
+.main__education_one >ul >li > a {
+    color:#000;
+}
+
+.main__education_one >ul >li > a:hover {
+    color: var(--blue)
 }
 
 .main__projects_one {
@@ -470,9 +456,6 @@ h3 {
     overflow: hidden;
 }
 
-.main__projects_one_slider_rel {
-    /* position: relative; */
-}
 
 .main__project_slider {
     content: '';
@@ -568,8 +551,4 @@ h3 {
 
 .footer__github {
     height: 50px
-}
-
-@media (min-width: 1280px) {
-
 }

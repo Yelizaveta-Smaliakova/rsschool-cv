@@ -20,6 +20,8 @@ let next_button = document.getElementsByClassName("main__project_slider-right")[
 let prev_button = document.getElementsByClassName("main__project_slider-left")[0];
 let slider = document.getElementsByClassName("main__project_slider")[0];
 
+slider.style.left = 0 + "px";
+
 let current_slider_element = 1
 
 next_button.addEventListener("click", function(){
