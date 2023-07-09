@@ -82,7 +82,6 @@ h3 {
     max-width: 1120px;
     min-height: 100%;
     margin: 0 auto;
-    padding: 0 80px;
     background-color: #fff;
     position: relative;
 }
@@ -104,6 +103,10 @@ h3 {
 }
 
 @media (min-width: 1280px) {
+    .wrapper {
+        padding: 0 80px;
+    }
+
     .header {
         right: calc((100% - 1280px)/2 + 80px);
     }
@@ -114,9 +117,34 @@ h3 {
 
         width: 700px;
     }
+
+    .main__wrapper {
+        flex-direction: row;
+    }
+
+    .main__general {
+        margin-left: 50px
+    }
+
+    .main__info {
+        width: 350px;
+    }
+
+    .main__photo_profile {
+        width: 300px;
+    }
+
+    .main__photo::before, .main__photo::after {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 1279px) and (min-width: 860px){
+    .wrapper {
+        padding: 0 80px;
+    }
+
     .header {
         right: 80px;
     }
@@ -127,9 +155,33 @@ h3 {
 
         width: 700px;
     }
+
+    .main__wrapper {
+        flex-direction: row;
+    }
+
+    .main__general {
+        margin-left: 50px
+    }
+
+    .main__info {
+        width: 350px;
+    }
+
+    .main__photo_profile {
+        width: 300px;
+    }
+
+    .main__photo::before, .main__photo::after {
+        width: 300px;
+        height: 300px;
+    }
 }
 
-@media (max-width: 859px){
+@media (max-width: 860px){
+    .wrapper {
+        padding: 0 calc(80 * 100%/860);
+    }
 
     .header__nav_dropdown {
         display: flex;
@@ -157,12 +209,27 @@ h3 {
         margin-left: 10px;
         line-height: 30px;
     }
-}
 
+    .main__wrapper {
+        flex-direction: row;
+    }
 
+    .main__general {
+        margin-left: 20px
+    }
 
-.header_nav {
+    .main__info {
+        width: 270px;
+    }
 
+    .main__photo_profile {
+        width: 250px;
+    }
+
+    .main__photo::before, .main__photo::after {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .header__nav_list {
@@ -192,21 +259,18 @@ h3 {
 
 .main__wrapper {
     display: flex;
-    flex-direction: row;
 }
 
 .main__info {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 350px;
 
     margin-right: 20px
 }
 
 .main__photo_profile {
     border-radius: 50%;
-    width: 300px;
     margin: 30px 0px 0px;
     position: relative;
     z-index: 10;
@@ -224,8 +288,6 @@ h3 {
 
     content: '';
     position: absolute;
-    width: 300px;
-    height: 300px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -238,8 +300,6 @@ h3 {
 
     content: '';
     position: absolute;
-    width: 300px;
-    height: 300px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -271,6 +331,7 @@ h3 {
 .main__contacts_list-photo {
     width: 20px;
     margin-right: 10px;
+    
 }
 
 .main__skills_list-photo {
@@ -287,8 +348,6 @@ h3 {
 .main__general {
     max-width:700px;
     width:100%;
-
-    margin-left: 50px
 }
 
 .main__general_name > p {
@@ -407,15 +466,23 @@ h3 {
     color: #333
 }
 
+.main__projects_one_slider_overflow {
+    overflow: hidden;
+}
+
+.main__projects_one_slider_rel {
+    /* position: relative; */
+}
+
 .main__project_slider {
     content: '';
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
-
     position: relative;
+
+    transition: all 1s ease-in-out;
 }
 
 .main__project_slider-element {
@@ -439,6 +506,7 @@ h3 {
     width: 40px;
     height: 50px;
     background-color: rgb(0 0 0 / 20%);
+    z-index: 10;
 }
 
 .main__project_slider-left{
@@ -474,6 +542,10 @@ h3 {
     text-align: center;
     width: 100%;
     border-bottom: #000 solid;
+}
+
+.hide {
+    display: none;
 }
 
 .footer {
